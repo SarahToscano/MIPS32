@@ -8,7 +8,7 @@
 int somador_completo(int a, int b, int carry_in){
 
   FILE *arquivo;
-  arquivo = fopen("../SOMASUB/Golden_Model/somador.tv", "a");
+  arquivo = fopen("SOMASUB/Simulation/ModelSim/somador.tv", "a");
   //fprintf(arquivo,"//Somador\n//A_B_Cin_Cout_Soma\n");
   fprintf(arquivo, "%d_%d_%d_", a,b,carry_in);
 

@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 //inclusao das funcoes em C
-#include "inv.h"
-#include "mux.h"
-#include "somador_completo.h"
-#include "carry_out_function.h"
-#include "acc.h"
+#include "INV\Golden_Model\inv.h"
+#include "MUX\Golden_Model\mux.h"
+#include "SOMASUB\Golden_Model\somador_completo.h"
+#include "SOMASUB\Golden_Model\carry_out_function.h"
+#include "ACC\Golden_Model\acc.h"
 
 int acumulado;
 
@@ -18,12 +18,12 @@ int main(void){
         //for (clk = 0; clk < 2; clk++){
             for (a = 0; a < 2; a++){
                     //for(acumulado=0;acumulado<2;acumulado++){
-                //inversor(a);
+                inversor(a);
                 //acc(clk_a, clk, a, acumulado);
                 for (b = 0; b < 2; b++){
                     //mux(a, b, Sel);
                     for (carry_in = 0; carry_in < 2; carry_in++){
-                        somador_completo(a, b, carry_in);
+                        //somador_completo(a, b, carry_in);
                     //}
                 //}
             }

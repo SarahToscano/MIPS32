@@ -4,7 +4,7 @@
 int acc(int clk_a, int clk, int a, int acumulado){
     FILE *arquivo;
     int y ;
-    arquivo = fopen("../ACC/Golden_Model/acc.tv", "a");
+    arquivo = fopen("ACC/Simulation/ModelSim/acc.tv", "a");
     fprintf(arquivo, "%d_%d_%d_%d_", clk_a, clk, a, acumulado);
 
   //fprintf(arquivo, "//acc\n//clk_a clk saida\n");

@@ -4,7 +4,7 @@
 int mux(int a, int b, int Sel){
 
   FILE *arquivo;
-  arquivo = fopen("../MUX/Golden_Model/mux.tv", "a");
+  arquivo = fopen("MUX/Simulation/ModelSim/mux.tv", "a");
 
   //fprintf(arquivo, "//MUX\n//Sel_Saida\n");
   fprintf(arquivo, "%d_%d_%d_", Sel,a,b);
