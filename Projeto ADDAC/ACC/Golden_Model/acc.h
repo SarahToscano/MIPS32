@@ -3,7 +3,7 @@
 
 int acc(int clk_a, int clk, int a, int acumulado){
     FILE *arquivo;
-    int y ;
+    int y =0;
     arquivo = fopen("ACC/Simulation/ModelSim/acc.tv", "a");
     fprintf(arquivo, "%d_%d_%d_%d_", clk_a, clk, a, acumulado);
 
@@ -13,6 +13,7 @@ int acc(int clk_a, int clk, int a, int acumulado){
       y=a;
     else
         y=acumulado;//valor anterior
+
     fprintf(arquivo, "%d\n", y);
     return y;
 
