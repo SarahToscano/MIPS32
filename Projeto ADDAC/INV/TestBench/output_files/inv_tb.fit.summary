@@ -1,0 +1,17 @@
+Fitter Status : Successful - Thu Nov 28 00:30:41 2019
+Quartus Prime Version : 19.1.0 Build 240 03/26/2019 SJ Pro Edition
+Revision Name : inv_tb
+Top-level Entity Name : inv_tb
+Family : Cyclone 10 GX
+Device : 10CX220YF780I5G
+Timing Models : Final
+Logic utilization (in ALMs) : 0 / 80,330 ( 0 % )
+Total registers : 0
+Total pins : 0 / 340 ( 0 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 12,021,760 ( 0 % )
+Total RAM Blocks : 0 / 587 ( 0 % )
+Total DSP Blocks : 0 / 192 ( 0 % )
+Total HSSI RX channels : 0 / 12 ( 0 % )
+Total HSSI TX channels : 0 / 12 ( 0 % )
+Total PLLs : 0 / 30 ( 0 % )

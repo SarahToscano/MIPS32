@@ -1,0 +1,931 @@
+Fitter Plan Stage Report for inv_tb
+Thu Nov 28 00:30:03 2019
+Quartus Prime Version 19.1.0 Build 240 03/26/2019 SJ Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Device Options
+  3. Operating Settings and Conditions
+  4. I/O Bank Usage
+  5. All Package Pins
+  6. Plan Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++------------------------------------------------------------------------------------------------+
+; Fitter Device Options                                                                          ;
++------------------------------------------------------------------+-----------------------------+
+; Option                                                           ; Setting                     ;
++------------------------------------------------------------------+-----------------------------+
+; Enable user-supplied start-up clock (CLKUSR)                     ; Off                         ;
+; Enable device-wide reset (DEV_CLRn)                              ; Off                         ;
+; Enable device-wide output enable (DEV_OE)                        ; Off                         ;
+; Enable INIT_DONE output                                          ; Off                         ;
+; Configuration scheme                                             ; Passive Serial              ;
+; Enable Error Detection CRC_ERROR pin                             ; Off                         ;
+; Enable CvP_CONFDONE pin                                          ; Off                         ;
+; Enable open drain on CRC_ERROR pin                               ; On                          ;
+; Enable open drain on CvP_CONFDONE pin                            ; On                          ;
+; Enable open drain on INIT_DONE pin                               ; On                          ;
+; Enable open drain on Partial Reconfiguration pins                ; Off                         ;
+; Enable open drain on nCEO pin                                    ; On                          ;
+; Enable Partial Reconfiguration pins                              ; Off                         ;
+; Enable input tri-state on active configuration pins in user mode ; Off                         ;
+; Enable internal scrubbing                                        ; Off                         ;
+; Active Serial clock source                                       ; 100 MHz Internal Oscillator ;
+; Configuration clock source                                       ; Internal Oscillator         ;
+; Configuration via Protocol                                       ; Off                         ;
+; Configuration Voltage Level                                      ; Auto                        ;
+; Force Configuration Voltage Level                                ; Off                         ;
+; Enable nCEO output                                               ; Off                         ;
+; Data[7..1]                                                       ; Unreserved                  ;
+; Data[0]                                                          ; As input tri-stated         ;
+; Data[31..16]                                                     ; Unreserved                  ;
+; Data[15..8]                                                      ; Unreserved                  ;
++------------------------------------------------------------------+-----------------------------+
+
+
++------------------------------------+
+; Operating Settings and Conditions  ;
++---------------------------+--------+
+; Setting                   ; Value  ;
++---------------------------+--------+
+; Nominal Core Voltage      ; 0.90 V ;
+; Low Junction Temperature  ; -40 °C ;
+; High Junction Temperature ; 100 °C ;
++---------------------------+--------+
+
+
++----------------------------------------------------------+
+; I/O Bank Usage                                           ;
++----------+----------------+---------------+--------------+
+; I/O Bank ; Usage          ; VCCIO Voltage ; VREF Voltage ;
++----------+----------------+---------------+--------------+
+; 1F       ; 0 / 0 ( -- )   ; --            ; --           ;
+; 1E       ; 0 / 0 ( -- )   ; --            ; --           ;
+; 1D       ; 0 / 28 ( 0 % ) ; --            ; --           ;
+; 1C       ; 0 / 28 ( 0 % ) ; --            ; --           ;
+; 2L       ; 0 / 48 ( 0 % ) ; 1.8V          ; --           ;
+; 2K       ; 0 / 48 ( 0 % ) ; 1.8V          ; --           ;
+; 2J       ; 0 / 48 ( 0 % ) ; 1.8V          ; --           ;
+; 2A       ; 1 / 48 ( 2 % ) ; 1.8V          ; --           ;
+; 3B       ; 0 / 48 ( 0 % ) ; 1.8V          ; --           ;
+; 3A       ; 0 / 44 ( 0 % ) ; 1.8V          ; --           ;
++----------+----------------+---------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; All Package Pins                                                                                                                                                       ;
++----------+------------+----------+---------------------------------+--------+--------------+----------------+--------------+-----------------+----------+--------------+
+; Location ; Pad Number ; I/O Bank ; Pin Name/Usage                  ; Dir.   ; I/O Standard ; Voltage        ; I/O Type     ; User Assignment ; Bus Hold ; Weak Pull Up ;
++----------+------------+----------+---------------------------------+--------+--------------+----------------+--------------+-----------------+----------+--------------+
+; A2       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; A3       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; A4       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; A5       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; A6       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; A7       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; A8       ; 166        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A9       ; 167        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A10      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; A11      ; 207        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A12      ; 205        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A13      ; 204        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A14      ; 203        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A15      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; A16      ; 172        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A17      ; 173        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A18      ; 174        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A19      ; 175        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A20      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; A21      ; 193        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A22      ; 192        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A23      ; 184        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A24      ; 185        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A25      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; A26      ; 190        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; A27      ; 191        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA1      ; 462        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA2      ; 467        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA3      ; 469        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA4      ; 468        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA5      ;            ; 3A       ; VCCIO3A                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; AA6      ; 471        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA7      ; 470        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA8      ; 458        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA9      ; 459        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA10     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AA11     ; 292        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA12     ; 301        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA13     ; 300        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA14     ; 294        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA15     ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; AA16     ; 280        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA17     ; 227        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA18     ; 231        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA19     ; 230        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA20     ;            ; 2J       ; VCCIO2J                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; AA21     ; 221        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA22     ; 248        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA23     ; 249        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AA24     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AA25     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AA26     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AA27     ; 94         ; 1C       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AA28     ; 95         ; 1C       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AB1      ; 463        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB2      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AB3      ; 466        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB4      ; 460        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB5      ; 464        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB6      ; 465        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB7      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AB8      ; 504        ; CSS      ; ^MSEL2                          ; input  ;              ;                ; --           ;                 ; --       ; --           ;
+; AB9      ; 510        ; CSS      ; ^nCE                            ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AB10     ; 496        ; CSS      ; ^GND                            ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AB11     ; 293        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB12     ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; AB13     ; 298        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB14     ; 295        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB15     ; 296        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB16     ; 281        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB17     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AB18     ; 225        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB19     ; 224        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB20     ; 232        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB21     ; 236        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB22     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AB23     ; 250        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AB24     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AB25     ; 100        ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AB26     ; 101        ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AB27     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AB28     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AC1      ; 477        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC2      ; 476        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC3      ; 472        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC4      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AC5      ; 461        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC6      ; 489        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC7      ; 488        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC8      ; 509        ; CSS      ; ^nCONFIG                        ; input  ;              ;                ; --           ;                 ; --       ; --           ;
+; AC9      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AC10     ; 501        ; CSS      ; #TDI                            ; input  ;              ;                ; --           ;                 ; --       ; --           ;
+; AC11     ; 302        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC12     ; 303        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC13     ; 299        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC14     ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; AC15     ; 297        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC16     ; 285        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC17     ; 284        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC18     ; 286        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC19     ;            ; 2J       ; VCCIO2J                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; AC20     ; 233        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC21     ; 237        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC22     ; 254        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC23     ; 251        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AC24     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AC25     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AC26     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AC27     ; 98         ; 1C       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AC28     ; 99         ; 1C       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AD1      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AD2      ; 478        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AD3      ; 473        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AD4      ; 486        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AD5      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AD6      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AD7      ; 503        ; CSS      ; ^MSEL1                          ; input  ;              ;                ; --           ;                 ; --       ; --           ;
+; AD8      ; 505        ; CSS      ; ^nIO_PULLUP                     ; input  ;              ;                ; --           ;                 ; --       ; --           ;
+; AD9      ; 518        ; CSS      ; ^DCLK                           ; bidir  ;              ;                ; Weak Pull Up ;                 ; --       ; On           ;
+; AD10     ; 508        ; CSS      ; ^GND                            ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AD11     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AD12     ; 262        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AD13     ; 267        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AD14     ; 266        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AD15     ; 260        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AD16     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AD17     ; 288        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AD18     ; 287        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AD19     ; 282        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AD20     ; 283        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AD21     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AD22     ; 255        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AD23     ; 246        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AD24     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AD25     ; 104        ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AD26     ; 105        ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AD27     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AD28     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AE1      ; 475        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE2      ; 479        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE3      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AE4      ; 487        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE5      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AE6      ; 490        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE7      ; 502        ; CSS      ; ^MSEL0                          ; input  ;              ;                ; --           ;                 ; --       ; --           ;
+; AE8      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AE9      ; 514        ; CSS      ; ^AS_DATA0, ASDO                 ;        ;              ;                ; Weak Pull Up ;                 ; --       ; On           ;
+; AE10     ; 256        ; 2A       ; ~ALTERA_DATA0~ / RESERVED_INPUT ; input  ; 1.8 V        ;                ; --           ; N               ; no       ; Off          ;
+; AE11     ; 257        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE12     ; 263        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE13     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AE14     ; 258        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE15     ; 259        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE16     ; 261        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE17     ; 289        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE18     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AE19     ; 275        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE20     ; 274        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE21     ; 238        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE22     ; 252        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE23     ; 247        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AE24     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AE25     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AE26     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AE27     ; 102        ; 1C       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AE28     ; 103        ; 1C       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AF1      ; 480        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF2      ; 474        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF3      ; 482        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF4      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AF5      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AF6      ; 491        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF7      ; 506        ; CSS      ; ^nSTATUS                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AF8      ; 499        ; CSS      ; #TRST                           ; input  ;              ;                ; --           ;                 ; --       ; --           ;
+; AF9      ; 513        ; CSS      ; ^nCSO2                          ;        ;              ;                ; Weak Pull Up ;                 ; --       ; On           ;
+; AF10     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AF11     ; 264        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF12     ; 265        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF13     ; 273        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF14     ; 272        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF15     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AF16     ; 276        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF17     ; 271        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF18     ; 270        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF19     ; 268        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF20     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AF21     ; 239        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF22     ; 253        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF23     ; 244        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AF24     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AF25     ; 108        ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AF26     ; 109        ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AF27     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AF28     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AG1      ; 481        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AG2      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AG3      ; 483        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AG4      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AG5      ; 516        ; CSS      ; ^AS_DATA2                       ;        ;              ;                ; Weak Pull Up ;                 ; --       ; On           ;
+; AG6      ; 515        ; CSS      ; ^AS_DATA1                       ;        ;              ;                ; Weak Pull Up ;                 ; --       ; On           ;
+; AG7      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AG8      ; 507        ; CSS      ; ^CONF_DONE                      ; bidir  ;              ;                ; --           ;                 ; --       ; --           ;
+; AG9      ; 208        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AG10     ; 209        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AG11     ; 216        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AG12     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AG13     ; 218        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AG14     ; 279        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AG15     ; 278        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AG16     ; 277        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AG17     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AG18     ; 269        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AG19     ; 243        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AG20     ; 242        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AG21     ; 240        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AG22     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AG23     ; 245        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AG24     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AG25     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AG26     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AG27     ; 106        ; 1C       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AG28     ; 107        ; 1C       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AH2      ; 485        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AH3      ; 484        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AH4      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AH5      ; 517        ; CSS      ; ^AS_DATA3                       ;        ;              ;                ; Weak Pull Up ;                 ; --       ; On           ;
+; AH6      ; 498        ; CSS      ; #TMS                            ; input  ;              ;                ; --           ;                 ; --       ; --           ;
+; AH7      ; 512        ; CSS      ; ^nCSO1                          ;        ;              ;                ; Weak Pull Up ;                 ; --       ; On           ;
+; AH8      ; 511        ; CSS      ; ^nCSO0                          ;        ;              ;                ; Weak Pull Up ;                 ; --       ; On           ;
+; AH9      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AH10     ; 214        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AH11     ; 215        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AH12     ; 217        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AH13     ; 219        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AH14     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AH15     ; 212        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AH16     ; 213        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AH17     ; 210        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AH18     ; 211        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AH19     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AH20     ; 234        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AH21     ; 235        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AH22     ; 241        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; AH23     ;            ;          ; DNU                             ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AH24     ;            ;          ; DNU                             ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AH25     ;            ;          ; GND                             ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; AH26     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; AH27     ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; B1       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; B2       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; B3       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; B4       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; B5       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; B6       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; B7       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; B8       ; 160        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B9       ; 161        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B10      ; 163        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B11      ; 206        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B12      ;            ; 2K       ; VCCIO2K                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; B13      ; 202        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B14      ; 201        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B15      ; 200        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B16      ; 177        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B17      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; B18      ; 178        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B19      ; 179        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B20      ; 181        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B21      ; 187        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B22      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; B23      ; 188        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B24      ; 189        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B25      ; 194        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B26      ; 195        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; B27      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; B28      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; C1       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; C2       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; C3       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; C4       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; C5       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; C6       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; C7       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; C8       ; 169        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; C9       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; C10      ; 162        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; C11      ; 164        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; C12      ; 165        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; C13      ; 199        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; C14      ;            ; 2K       ; VCCIO2K                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; C15      ; 176        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; C16      ; 156        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; C17      ; 157        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; C18      ; 159        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; C19      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; C20      ; 180        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; C21      ; 186        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; C22      ; 130        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; C23      ; 131        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; C24      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; C25      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; C26      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; C27      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; C28      ;            ;          ; GND                             ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; D1       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; D2       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; D3       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; D4       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; D5       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; D6       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; D7       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; D8       ; 168        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; D9       ; 171        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; D10      ; 170        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; D11      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; D12      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; D13      ; 198        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; D14      ; 197        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; D15      ; 183        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; D16      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; D17      ; 158        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; D18      ; 148        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; D19      ; 149        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; D20      ; 155        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; D21      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; D22      ; 125        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; D23      ; 127        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; D24      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; D25      ; 60         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; D26      ; 61         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; D27      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; D28      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; E1       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; E2       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; E3       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; E4       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; E5       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; E6       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; E7       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; E8       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; E9       ;            ; 2K       ; VREFB2KN0                       ; power  ;              ; GND            ; --           ;                 ; --       ; --           ;
+; E10      ;            ;          ; VSIGP_0                         ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; E11      ;            ;          ; VSIGN_0                         ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; E12      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; E13      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; E14      ; 196        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; E15      ; 182        ; 2K       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; E16      ; 151        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; E17      ; 150        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; E18      ;            ; 2L       ; VCCIO2L                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; E19      ; 153        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; E20      ; 154        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; E21      ; 124        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; E22      ; 129        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; E23      ; 126        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; E24      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; E25      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; E26      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; E27      ; 58         ; 1D       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; E28      ; 59         ; 1D       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F1       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F2       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F3       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F4       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F5       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; F6       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F7       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F8       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F9       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F10      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; F11      ;            ;          ; VSIGP_1                         ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F12      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F13      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F14      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F15      ;            ; 2K       ; VCCIO2K                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; F16      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F17      ; 119        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; F18      ; 118        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; F19      ; 152        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; F20      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; F21      ; 133        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; F22      ; 128        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; F23      ; 135        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; F24      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; F25      ; 64         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F26      ; 65         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; F27      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; F28      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; G1       ; 426        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; G2       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; G3       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; G4       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; G5       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; G6       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; G7       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; G8       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; G9       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; G10      ;            ;          ; ADCGND                          ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; G11      ;            ;          ; VSIGN_1                         ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; G12      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; G13      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; G14      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; G15      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; G16      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; G17      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; G18      ; 121        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; G19      ; 122        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; G20      ; 123        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; G21      ; 132        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; G22      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; G23      ; 134        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; G24      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; G25      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; G26      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; G27      ; 62         ; 1D       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; G28      ; 63         ; 1D       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; H1       ; 427        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; H2       ; 419        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; H3       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; H4       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; H5       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; H6       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; H7       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; H8       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; H9       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; H10      ;            ;          ; TEMPDIODEn                      ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; H11      ;            ;          ; TEMPDIODEp                      ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; H12      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; H13      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; H14      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; H15      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; H16      ; 112        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; H17      ; 113        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; H18      ; 120        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; H19      ;            ; 2L       ; VCCIO2L                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; H20      ; 143        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; H21      ; 142        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; H22      ; 140        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; H23      ; 136        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; H24      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; H25      ; 68         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; H26      ; 69         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; H27      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; H28      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; J1       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; J2       ; 420        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; J3       ; 418        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; J4       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; J5       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; J6       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; J7       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; J8       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; J9       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; J10      ;            ;          ; VREFN_ADC                       ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; J11      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; J12      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; J13      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; J14      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; J15      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; J16      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; J17      ; 117        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; J18      ; 115        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; J19      ; 114        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; J20      ; 139        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; J21      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; J22      ; 141        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; J23      ; 137        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; J24      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; J25      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; J26      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; J27      ; 66         ; 1D       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; J28      ; 67         ; 1D       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; K1       ; 432        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; K2       ; 421        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; K3       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; K4       ; 415        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; K5       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; K6       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; K7       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; K8       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; K9       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; K10      ;            ;          ; VREFP_ADC                       ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; K11      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; K12      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; K13      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; K14      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; K15      ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; K16      ;            ; 2L       ; VREFB2LN0                       ; power  ;              ; GND            ; --           ;                 ; --       ; --           ;
+; K17      ; 116        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; K18      ;            ; 2L       ; VCCIO2L                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; K19      ; 145        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; K20      ; 144        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; K21      ; 138        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; K22      ; 146        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; K23      ; 147        ; 2L       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; K24      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; K25      ; 72         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; K26      ; 73         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; K27      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; K28      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; L1       ; 433        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; L2       ; 423        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; L3       ; 422        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; L4       ; 414        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; L5       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; L6       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; L7       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; L8       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; L9       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; L10      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; L11      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; L12      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; L13      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; L14      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; L15      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; L16      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; L17      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; L18      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; L19      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; L20      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; L21      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; L22      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; L23      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; L24      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; L25      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; L26      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; L27      ; 70         ; 1D       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; L28      ; 71         ; 1D       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; M1       ; 424        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; M2       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; M3       ; 413        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; M4       ; 412        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; M5       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; M6       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; M7       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; M8       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; M9       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; M10      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; M11      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; M12      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; M13      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; M14      ;            ; --       ; VCCPT                           ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; M15      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; M16      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; M17      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; M18      ;            ; --       ; VCCPT                           ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; M19      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; M20      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; M21      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; M22      ;            ; --       ; VCCH_GXBL                       ; gnd    ;              ; GND            ; --           ;                 ; --       ; --           ;
+; M23      ;            ; --       ; VCCT_GXBL1D                     ; gnd    ;              ; GND            ; --           ;                 ; --       ; --           ;
+; M24      ;            ; --       ; VCCT_GXBL1D                     ; gnd    ;              ; GND            ; --           ;                 ; --       ; --           ;
+; M25      ; 76         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; M26      ; 77         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; M27      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; M28      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; N1       ; 425        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; N2       ; 417        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; N3       ; 416        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; N4       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; N5       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; N6       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; N7       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; N8       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; N9       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; N10      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; N11      ;            ; --       ; VCCP                            ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; N12      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; N13      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; N14      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; N15      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; N16      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; N17      ;            ; --       ; VCCP                            ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; N18      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; N19      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; N20      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; N21      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; N22      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; N23      ; 57         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; N24      ; 56         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; N25      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; N26      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; N27      ; 74         ; 1D       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; N28      ; 75         ; 1D       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; P1       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; P2       ; 428        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; P3       ; 401        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; P4       ; 400        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; P5       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; P6       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; P7       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; P8       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; P9       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; P10      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; P11      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; P12      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; P13      ;            ;          ; VCCA_PLL                        ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; P14      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; P15      ;            ;          ; VCCA_PLL                        ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; P16      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; P17      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; P18      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; P19      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; P20      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; P21      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; P22      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; P23      ;            ; --       ; VCCR_GXBL1D                     ; gnd    ;              ; GND            ; --           ;                 ; --       ; --           ;
+; P24      ;            ; --       ; VCCR_GXBL1D                     ; gnd    ;              ; GND            ; --           ;                 ; --       ; --           ;
+; P25      ; 80         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; P26      ; 81         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; P27      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; P28      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; R1       ; 434        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; R2       ; 429        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; R3       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; R4       ; 407        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; R5       ; 406        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; R6       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; R7       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; R8       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; R9       ;            ;          ; NC                              ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; R10      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; R11      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; R12      ;            ; --       ; VCCERAM                         ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; R13      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; R14      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; R15      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; R16      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; R17      ;            ; --       ; VCCERAM                         ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; R18      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; R19      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; R20      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; R21      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; R22      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; R23      ; 83         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; R24      ; 82         ; 1D       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; R25      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; R26      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; R27      ; 78         ; 1D       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; R28      ; 79         ; 1D       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; T1       ; 435        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; T2       ; 431        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; T3       ; 430        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; T4       ; 409        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; T5       ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; T6       ; 405        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; T7       ; 404        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; T8       ; 403        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; T9       ; 402        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; T10      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; T11      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; T12      ;            ;          ; GNDSENSE                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; T13      ;            ;          ; VCCLSENSE                       ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; T14      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; T15      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; T16      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; T17      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; T18      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; T19      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; T20      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; T21      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; T22      ;            ; --       ; VCCH_GXBL                       ; gnd    ;              ; GND            ; --           ;                 ; --       ; --           ;
+; T23      ;            ; --       ; VCCT_GXBL1C                     ; gnd    ;              ; GND            ; --           ;                 ; --       ; --           ;
+; T24      ;            ; --       ; VCCT_GXBL1C                     ; gnd    ;              ; GND            ; --           ;                 ; --       ; --           ;
+; T25      ; 88         ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; T26      ; 89         ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; T27      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; T28      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; U1       ; 438        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; U2       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; U3       ; 437        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; U4       ; 436        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; U5       ; 408        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; U6       ; 441        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; U7       ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; U8       ; 411        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; U9       ;            ; 3B       ; VREFB3BN0                       ; power  ;              ; GND            ; --           ;                 ; --       ; --           ;
+; U10      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; U11      ;            ; --       ; VCCP                            ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; U12      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; U13      ;            ; --       ; VCCP                            ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; U14      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; U15      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; U16      ;            ; --       ; VCCP                            ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; U17      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; U18      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; U19      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; U20      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; U21      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; U22      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; U23      ; 85         ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; U24      ; 84         ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; U25      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; U26      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; U27      ; 86         ; 1C       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; U28      ; 87         ; 1C       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; V1       ; 439        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; V2       ; 444        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; V3       ; 446        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; V4       ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; V5       ; 443        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; V6       ; 442        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; V7       ; 440        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; V8       ; 410        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; V9       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; V10      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; V11      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; V12      ;            ; --       ; VCCPT                           ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; V13      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; V14      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; V15      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; V16      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; V17      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; V18      ;            ; --       ; VCCPT                           ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; V19      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; V20      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; V21      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; V22      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; V23      ;            ; --       ; VCCR_GXBL1C                     ; gnd    ;              ; GND            ; --           ;                 ; --       ; --           ;
+; V24      ;            ; --       ; VCCR_GXBL1C                     ; gnd    ;              ; GND            ; --           ;                 ; --       ; --           ;
+; V25      ; 92         ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; V26      ; 93         ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; V27      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; V28      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; W1       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; W2       ; 445        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; W3       ; 447        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; W4       ; 449        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; W5       ; 455        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; W6       ;            ; 3A       ; VCCIO3A                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; W7       ; 450        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; W8       ; 451        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; W9       ;            ; 3A       ; VREFB3AN0                       ; power  ;              ; GND            ; --           ;                 ; --       ; --           ;
+; W10      ; 497        ; CSS      ; #TDO                            ; output ;              ;                ; --           ;                 ; --       ; --           ;
+; W11      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; W12      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; W13      ;            ; --       ; VCCBAT                          ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; W14      ;            ; --       ; VCCPGM                          ; power  ;              ; 1.2V/1.5V/1.8V ; --           ;                 ; --       ; --           ;
+; W15      ;            ; 2A       ; VREFB2AN0                       ; power  ;              ; GND            ; --           ;                 ; --       ; --           ;
+; W16      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; W17      ;            ; 2J       ; VREFB2JN0                       ; power  ;              ; GND            ; --           ;                 ; --       ; --           ;
+; W18      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; W19      ;            ; --       ; VCC                             ; power  ;              ; 0.9V           ; --           ;                 ; --       ; --           ;
+; W20      ; 223        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; W21      ; 222        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; W22      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; W23      ; 111        ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; W24      ; 110        ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; W25      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; W26      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; W27      ; 90         ; 1C       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; W28      ; 91         ; 1C       ; GXB_NC                          ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; Y1       ; 457        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; Y2       ; 456        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; Y3       ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; Y4       ; 448        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; Y5       ; 454        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; Y6       ; 452        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; Y7       ; 453        ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; Y8       ;            ; 3A       ; VCCIO3A                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; Y9       ; 500        ; CSS      ; #TCK                            ; input  ;              ;                ; --           ;                 ; --       ; --           ;
+; Y10      ;            ;          ; DNU                             ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; Y11      ;            ;          ; DNU                             ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; Y12      ;            ;          ; DNU                             ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; Y13      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; Y14      ;            ; --       ; VCCPGM                          ; power  ;              ; 1.2V/1.5V/1.8V ; --           ;                 ; --       ; --           ;
+; Y15      ; 290        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; Y16      ; 291        ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; Y17      ; 226        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; Y18      ;            ; 2J       ; VCCIO2J                         ; power  ;              ; 1.8V           ; --           ;                 ; --       ; --           ;
+; Y19      ; 228        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; Y20      ; 229        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; Y21      ; 220        ; 2J       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                ; --           ;                 ; no       ; On           ;
+; Y22      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; Y23      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; Y24      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; Y25      ; 96         ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; Y26      ; 97         ; 1C       ; GXB_GND*                        ;        ;              ;                ; --           ;                 ; --       ; --           ;
+; Y27      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
+; Y28      ;            ;          ; GND                             ; gnd    ;              ;                ; --           ;                 ; --       ; --           ;
++----------+------------+----------+---------------------------------+--------+--------------+----------------+--------------+-----------------+----------+--------------+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++---------------+
+; Plan Messages ;
++---------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 19.1.0 Build 240 03/26/2019 SJ Pro Edition
+    Info: Processing started: Thu Nov 28 00:29:13 2019
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off inv_tb -c inv_tb
+Info (16677): Loading synthesized database
+Info (16734): Loading "synthesized" snapshot for partition "root_partition".
+Info (16678): Successfully loaded synthesized database: elapsed time is 00:00:02
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (119006): Selected device 10CX220YF780I5G for design "inv_tb"
+Info (21077): Low junction temperature is -40 degrees C
+Info (21077): High junction temperature is 100 degrees C
+Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+Info (12262): Starting Fitter periphery placement operations
+Info (12290): Loading the periphery placement data.
+Info (12291): Periphery placement data loaded: elapsed time is 00:00:11
+Info (12627): Pin ~ALTERA_DATA0~ is reserved at location AE10
+Info (16210): Plan updated with currently enabled project assignments.
+Info (12295): Periphery placement of all unplaced cells complete: elapsed time is 00:00:00
+Critical Warning (17951): There are 12 unused RX channels in the design.
+    Info (19540): Add the QSF assignment 'set_instance_assignment -name PRESERVE_UNUSED_XCVR_CHANNEL ON -to <pin_name>' for each unused channel that will be used in future.
+    Info (19541): The above QSF assignment will preserve the performance of specified channels over time, and works only if the design uses at least 1 transceiver channel.
+Critical Warning (18655): There are 12 unused TX channels in the design.
+    Info (19540): Add the QSF assignment 'set_instance_assignment -name PRESERVE_UNUSED_XCVR_CHANNEL ON -to <pin_name>' for each unused channel that will be used in future.
+    Info (19541): The above QSF assignment will preserve the performance of specified channels over time, and works only if the design uses at least 1 transceiver channel.
+Info (19539): Reading the HDL-embedded SDC files elapsed 00:00:00.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'inv_tb.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (19449): Reading SDC files elapsed 00:00:00.
+Info (332144): No user constrained base clocks found in the design. They will be automatically derived.
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
+Info (176233): Starting register packing
+Info (176235): Finished register packing
+    Extra Info (176219): No registers were packed into other blocks
+Info (20273): Intermediate fitter snapshots will not be committed because ENABLE_INTERMEDIATE_SNAPSHOTS QSF assignment is disabled during compilation.
+
+

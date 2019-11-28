@@ -1,0 +1,133 @@
+Flow report for inv_tb
+Thu Nov 28 00:31:07 2019
+Quartus Prime Version 19.1.0 Build 240 03/26/2019 SJ Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Parallel Compilation
+  2. Legal Notice
+  3. Flow Summary
+  4. Flow Settings
+  5. Flow Non-Default Global Settings
+  6. Flow Elapsed Time
+  7. Flow OS Summary
+  8. Flow Log
+
+
+
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 4      ;
+; Maximum used               ; 4      ;
++----------------------------+--------+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++--------------------------------------------------------------------------+
+; Flow Summary                                                             ;
++-----------------------------+--------------------------------------------+
+; Flow Status                 ; Successful - Thu Nov 28 00:31:06 2019      ;
+; Quartus Prime Version       ; 19.1.0 Build 240 03/26/2019 SJ Pro Edition ;
+; Revision Name               ; inv_tb                                     ;
+; Top-level Entity Name       ; inv_tb                                     ;
+; Family                      ; Cyclone 10 GX                              ;
+; Device                      ; 10CX220YF780I5G                            ;
+; Timing Models               ; Final                                      ;
+; Logic utilization (in ALMs) ; 0 / 80,330 ( 0 % )                         ;
+; Total registers             ; 0                                          ;
+; Total pins                  ; 0 / 340 ( 0 % )                            ;
+; Total virtual pins          ; 0                                          ;
+; Total block memory bits     ; 0 / 12,021,760 ( 0 % )                     ;
+; Total DSP Blocks            ; 0 / 192 ( 0 % )                            ;
+; Total HSSI RX channels      ; 0 / 12 ( 0 % )                             ;
+; Total HSSI TX channels      ; 0 / 12 ( 0 % )                             ;
+; Total PLLs                  ; 0 / 30 ( 0 % )                             ;
++-----------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/28/2019 00:29:05 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; inv_tb              ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                 ;
++-------------------------------+---------------------------------------+---------------+-------------+------------+
+; Assignment Name               ; Value                                 ; Default Value ; Entity Name ; Section Id ;
++-------------------------------+---------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID         ; 167690714592430.157491174507508       ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP        ; 100                                   ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP        ; -40                                   ; --            ; --          ; --         ;
+; POWER_BOARD_THERMAL_MODEL     ; None (CONSERVATIVE)                   ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY      ; output_files                          ; --            ; --          ; --         ;
++-------------------------------+---------------------------------------+---------------+-------------+------------+
+
+
++--------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                              ;
++-----------------+--------------+-------------------------+---------------------+
+; Module Name     ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ;
++-----------------+--------------+-------------------------+---------------------+
+; Synthesis       ; 00:00:06     ; 1.0                     ; 5255 MB             ;
+; Fitter          ; 00:01:28     ; 1.0                     ; 7747 MB             ;
+; Timing Analyzer ; 00:00:06     ; 1.0                     ; 5892 MB             ;
+; Assembler       ; 00:00:09     ; 2.1                     ; 5730 MB             ;
+; Total           ; 00:01:49     ; --                      ; --                  ;
++-----------------+--------------+-------------------------+---------------------+
+
+
++-------------------------------------------------------------------------------+
+; Flow OS Summary                                                               ;
++-----------------+------------------+------------+------------+----------------+
+; Module Name     ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++-----------------+------------------+------------+------------+----------------+
+; Synthesis       ; LAPTOP-AA05CBOG  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter          ; LAPTOP-AA05CBOG  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer ; LAPTOP-AA05CBOG  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler       ; LAPTOP-AA05CBOG  ; Windows 10 ; 10.0       ; x86_64         ;
++-----------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_syn --read_settings_files=on --write_settings_files=off inv_tb -c inv_tb
+quartus_syn --read_settings_files=on --write_settings_files=off inv_tb -c inv_tb
+quartus_fit --read_settings_files=on --write_settings_files=off inv_tb -c inv_tb
+quartus_sta inv_tb -c inv_tb --mode=finalize
+quartus_asm --read_settings_files=on --write_settings_files=off inv_tb -c inv_tb
+
+
+

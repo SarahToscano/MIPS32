@@ -1,0 +1,145 @@
+Fitter Place Stage Report for inv_tb
+Thu Nov 28 00:30:15 2019
+Quartus Prime Version 19.1.0 Build 240 03/26/2019 SJ Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Resource Usage Summary
+  3. Fitter Resource Utilization by Entity
+  4. Place Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++------------------------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                                      ;
++-------------------------------------------------------------+----------------+-----+
+; Resource                                                    ; Usage          ; %   ;
++-------------------------------------------------------------+----------------+-----+
+; Logic utilization (ALMs needed / total ALMs on device)      ; 0 / 80,330     ; 0 % ;
+; ALMs needed [=A-B+C]                                        ; 0              ;     ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 0 / 80,330     ; 0 % ;
+;         [a] ALMs used for LUT logic and registers           ; 0              ;     ;
+;         [b] ALMs used for LUT logic                         ; 0              ;     ;
+;         [c] ALMs used for registers                         ; 0              ;     ;
+;         [d] ALMs used for memory (up to half of total ALMs) ; 0              ;     ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 80,330     ; 0 % ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 80,330     ; 0 % ;
+;         [a] Due to location constrained logic               ; 0              ;     ;
+;         [b] Due to LAB-wide signal conflicts                ; 0              ;     ;
+;         [c] Due to LAB input limits                         ; 0              ;     ;
+;         [d] Due to virtual I/Os                             ; 0              ;     ;
+;                                                             ;                ;     ;
+; Difficulty packing design                                   ; N/A            ;     ;
+;                                                             ;                ;     ;
+; Total LABs:  partially or completely used                   ; 0 / 8,033      ; 0 % ;
+;     -- Logic LABs                                           ; 0              ;     ;
+;     -- Memory LABs (up to half of total LABs)               ; 0              ;     ;
+;                                                             ;                ;     ;
+; Combinational ALUT usage for logic                          ; 0              ;     ;
+;     -- 7 input functions                                    ; 0              ;     ;
+;     -- 6 input functions                                    ; 0              ;     ;
+;     -- 5 input functions                                    ; 0              ;     ;
+;     -- 4 input functions                                    ; 0              ;     ;
+;     -- <=3 input functions                                  ; 0              ;     ;
+; Combinational ALUT usage for route-throughs                 ; 0              ;     ;
+;                                                             ;                ;     ;
+; Dedicated logic registers                                   ; 0              ;     ;
+;     -- By type:                                             ;                ;     ;
+;         -- Primary logic registers                          ; 0 / 160,660    ; 0 % ;
+;         -- Secondary logic registers                        ; 0 / 160,660    ; 0 % ;
+;     -- By function:                                         ;                ;     ;
+;         -- Design implementation registers                  ; 0              ;     ;
+;         -- Routing optimization registers                   ; 0              ;     ;
+;                                                             ;                ;     ;
+; ALMs adjustment for power estimation                        ; 0              ;     ;
+;                                                             ;                ;     ;
+; Virtual pins                                                ; 0              ;     ;
+; I/O pins                                                    ; 0 / 340        ; 0 % ;
+;     -- Clock pins                                           ; 0 / 16         ; 0 % ;
+;     -- Dedicated input pins                                 ; 0 / 35         ; 0 % ;
+;                                                             ;                ;     ;
+; M20K blocks                                                 ; 0 / 587        ; 0 % ;
+; Total MLAB memory bits                                      ; 0              ;     ;
+; Total block memory bits                                     ; 0 / 12,021,760 ; 0 % ;
+; Total block memory implementation bits                      ; 0 / 12,021,760 ; 0 % ;
+;                                                             ;                ;     ;
+; DSP Blocks Needed [=A+B-C]                                  ; 0 / 192        ; 0 % ;
+;     [A] Total Fixed Point DSP Blocks                        ; 0              ;     ;
+;     [B] Total Floating Point DSP Blocks                     ; 0              ;     ;
+;     [C] Estimate of DSP Blocks recoverable by dense merging ; 0              ;     ;
+;                                                             ;                ;     ;
+; IOPLLs                                                      ; 0 / 6          ; 0 % ;
+; FPLLs                                                       ; 0 / 8          ; 0 % ;
+; Global signals                                              ; 0              ;     ;
+;     -- Global clocks                                        ; 0 / 32         ; 0 % ;
+;     -- Regional clocks                                      ; 0 / 8          ; 0 % ;
+;     -- Periphery clocks                                     ; 0 / 144        ; 0 % ;
+; JTAGs                                                       ; 0 / 1          ; 0 % ;
+; ASMI blocks                                                 ; 0 / 1          ; 0 % ;
+; CRC blocks                                                  ; 0 / 1          ; 0 % ;
+; Remote update blocks                                        ; 0 / 1          ; 0 % ;
+; Oscillator blocks                                           ; 0 / 1          ; 0 % ;
+; PCIe Hard IPs                                               ; 0 / 1          ; 0 % ;
+; HSSI RX PCSs                                                ; 0 / 12         ; 0 % ;
+; HSSI PMA RX DESERs                                          ; 0 / 12         ; 0 % ;
+; HSSI TX PCSs                                                ; 0 / 12         ; 0 % ;
+; HSSI PMA TX SERs                                            ; 0 / 12         ; 0 % ;
+; HSSI CDR PLL                                                ; 0 / 12         ; 0 % ;
+;     -- CDR PLLs for Unused RX Clock Workaround              ; 0 / 12         ; 0 % ;
+; HSSI ATX PLL                                                ; 0 / 4          ; 0 % ;
+; Impedance control blocks                                    ; 0 / 7          ; 0 % ;
+; Maximum fan-out                                             ; 1              ;     ;
+; Highest non-global fan-out                                  ; 1              ;     ;
+; Total fan-out                                               ; 1              ;     ;
+; Average fan-out                                             ; 0.50           ;     ;
++-------------------------------------------------------------+----------------+-----+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                           ;
++----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M20Ks ; DSP Blocks ; Pins ; Virtual Pins ; IOPLLs ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------+---------------------+-------------+--------------+
+; |                          ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; 0 (0)  ; |                   ; inv_tb      ; altera_work  ;
++----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------+
+; Place Messages ;
++----------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 19.1.0 Build 240 03/26/2019 SJ Pro Edition
+    Info: Processing started: Thu Nov 28 00:29:13 2019
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off inv_tb -c inv_tb
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = inv_tb
+Info: Revision = inv_tb
+Info (11165): Fitter preparation operations ending: elapsed time is 00:00:33
+Info (11888): Total time spent on timing analysis during Placement is 0.00 seconds.
+
+
