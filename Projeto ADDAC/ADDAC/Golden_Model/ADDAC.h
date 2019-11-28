@@ -19,7 +19,7 @@ int addac (int a, int sel_0, int sel_1, int clk_a, int clk){
     mux_0 = mux(a, inversor(a), sel_0);
     //fprintf(arquivo, "%d_%d_%d__", mux_0,out, sel_0);//certo
 
-    saida_somador = somador_completo(a, out, sel_0);
+    saida_somador = somador_completo(mux_0, out, sel_0);
     //fprintf(arquivo, "%d_%d_%d__", mux_0,saida_somador,sel_1);
 
     mux_1 = mux(mux_0, saida_somador, sel_1);
