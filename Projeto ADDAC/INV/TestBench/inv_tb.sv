@@ -33,8 +33,8 @@ module inv_tb ();
 			aux_erro=erro;
 			assert (y === y_esperado); //verifica se o resultado bateu com o esperado
 		end else begin
-			//Caso o assert dê erro... São printadas as mensagens de Erro
-			$display("Linha [%d] -- Saída Esperada: %b --  Saída: %b",count+1,  y_esperado, y);
+			//Caso o assert dÃª erro... SÃ£o printadas as mensagens de Erro
+			$display("Linha [%d] -- SaÃ­da Esperada: %b --  SaÃ­da: %b",count+1,  y_esperado, y);
 			erro = erro + 1; //Incrementa contador de erros a cada bit errado encontrado
 		end
 			if(aux_erro === erro)
@@ -43,7 +43,7 @@ module inv_tb ();
 				$display("| %b | %b | ERRO", a, y);		
 			count = count+1;
 			
-			if(count == $size(vector)) begin //Finalização dos casos de testes
+			if(count == $size(vector)) begin //FinalizaÃ§Ã£o dos casos de testes
 				$display("Testes Efetuados  = %0d", count);
 				$display("Erros Encontrados = %0d", erro);
 				#10
