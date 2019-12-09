@@ -1,0 +1,48 @@
+Fitter Finalize Stage Report for inv_tb
+Thu Nov 28 00:30:39 2019
+Quartus Prime Version 19.1.0 Build 240 03/26/2019 SJ Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Finalize Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------+
+; Finalize Messages ;
++-------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 19.1.0 Build 240 03/26/2019 SJ Pro Edition
+    Info: Processing started: Thu Nov 28 00:29:13 2019
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off inv_tb -c inv_tb
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = inv_tb
+Info: Revision = inv_tb
+Info (11888): Total time spent on timing analysis during Post-Routing is 0.00 seconds.
+Info (16557): Fitter post-fit operations ending: elapsed time is 00:00:06
+
+

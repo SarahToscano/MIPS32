@@ -1,0 +1,262 @@
+Synthesis report
+Thu Nov 28 00:29:11 2019
+Quartus Prime Version 19.1.0 Build 240 03/26/2019 SJ Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Synthesis Summary
+  2. Synthesis Settings
+  3. Parallel Compilation
+  4. Synthesis Source Files Read
+  5. Synthesis Partition Summary
+  6. Partition "root_partition" Resource Utilization by Entity
+  7. Registers Removed During Synthesis
+  8. General Register Statistics for Partition "root_partition"
+  9. Post-Synthesis Netlist Statistics for Partition "root_partition"
+ 10. Synthesis Resource Usage Summary for Partition "root_partition"
+ 11. Synthesis Messages
+
+
+
++---------------------------------------------------------------+
+; Synthesis Summary                                             ;
++-----------------------+---------------------------------------+
+; Synthesis Status      ; Successful - Thu Nov 28 00:29:10 2019 ;
+; Revision Name         ; inv_tb                                ;
+; Top-level Entity Name ; inv_tb                                ;
+; Family                ; Cyclone 10 GX                         ;
++-----------------------+---------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Synthesis Settings                                                                                                        ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 10CX220YF780I5G    ;                    ;
+; Top-level entity name                                                           ; inv_tb             ; inv_tb             ;
+; Family name                                                                     ; Cyclone 10 GX      ; Cyclone 10 GX      ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Enable Design Assistant in the compilation flow                                 ; Off                ; Off                ;
+; Design Assistant include IP blocks                                              ; Off                ; Off                ;
+; Design Assistant limit on reported violations per rule                          ; 500                ; 500                ;
+; Optimization Mode                                                               ; Balanced           ; Balanced           ;
+; Allow Register Merging                                                          ; On                 ; On                 ;
+; Allow Register Duplication                                                      ; On                 ; On                 ;
+; Allow Register Retiming                                                         ; On                 ; On                 ;
+; Allow RAM Retiming                                                              ; Off                ; Off                ;
+; Allow DSP Retiming                                                              ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Auto               ; Auto               ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Number of Protected Registers Reported in Synthesis Report                      ; 100                ; 100                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
+; Disable DSP Negate Inferencing                                                  ; Off                ; Off                ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Size of the Latch Report                                                        ; 100                ; 100                ;
+; Enable State Machines Inference                                                 ; On                 ; On                 ;
+; Enable formal verification support during compilation                           ; Off                ; Off                ;
+; Size of the PR Initial Conditions Report                                        ; 15                 ; 15                 ;
+; Report PR Initial Values as Errors                                              ; Off                ; Off                ;
+; Fractal Synthesis                                                               ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 4      ;
+; Maximum used               ; 4      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Synthesis Source Files Read                                                                                                                                                                                       ;
++----------------------------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+----------------------------------+
+; File Name with User-Entered Path ; File Type                    ; File Name with Absolute Path                                                                       ; Library ; MD5                              ;
++----------------------------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+----------------------------------+
+; ../inv.sv                        ; User SystemVerilog HDL File  ; C:/Users/satc1/OneDrive/Documentos/git/Concepcao-Estruturada/Projeto ADDAC/INV/inv.sv              ;         ; ba3bafa766ea1bb4bb28d2696c96d7ff ;
+; inv_tb.sv                        ; User SystemVerilog HDL File  ; C:/Users/satc1/OneDrive/Documentos/git/Concepcao-Estruturada/Projeto ADDAC/INV/TestBench/inv_tb.sv ;         ; b1ef1aa21fc8d1ad3fba324f9c5ed673 ;
++----------------------------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+----------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Synthesis Partition Summary                                                                ;
++----------------+----------------+---------+--------------+-------+-------------------------+
+; Partition Name ; Hierarchy Path ; Type    ; Preservation ; Empty ; Partition Database File ;
++----------------+----------------+---------+--------------+-------+-------------------------+
+; root_partition ; |              ; Default ;              ;       ;                         ;
++----------------+----------------+---------+--------------+-------+-------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition "root_partition" Resource Utilization by Entity                                                                                                                                       ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; IOPLLs ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+---------------------+-------------+--------------+
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; a                                     ; Lost fanout        ;
+; Total Number of Removed Registers = 1 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------------+
+; General Register Statistics for Partition "root_partition" ;
++----------------------------------------------+-------------+
+; Statistic                                    ; Value       ;
++----------------------------------------------+-------------+
+; Total registers                              ; 0           ;
+; Number of registers using Synchronous Clear  ; 0           ;
+; Number of registers using Synchronous Load   ; 0           ;
+; Number of registers using Asynchronous Clear ; 0           ;
+; Number of registers using Asynchronous Load  ; 0           ;
+; Number of registers using Clock Enable       ; 0           ;
+; Number of registers using Preset             ; 0           ;
++----------------------------------------------+-------------+
+
+
++------------------------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Partition "root_partition" ;
++------------------------+-----------------------------------------+
+; Type                   ; Count                                   ;
++------------------------+-----------------------------------------+
+;                        ;                                         ;
+; Number of carry chains ; 0                                       ;
+; Max carry chain length ; 0                                       ;
+;                        ;                                         ;
+; Max LUT depth          ; 0.00                                    ;
+; Average LUT depth      ; 0.00                                    ;
++------------------------+-----------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Synthesis Resource Usage Summary for Partition "root_partition" ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimate of Logic utilization (ALMs needed) ; -14               ;
+;                                             ;                   ;
+; Combinational ALUT usage for logic          ; 0                 ;
+;     -- 7 input functions                    ; 0                 ;
+;     -- 6 input functions                    ; 0                 ;
+;     -- 5 input functions                    ; 0                 ;
+;     -- 4 input functions                    ; 0                 ;
+;     -- <=3 input functions                  ; 0                 ;
+;                                             ;                   ;
+; Dedicated logic registers                   ; 0                 ;
+;                                             ;                   ;
+; I/O pins                                    ; 0                 ;
+;                                             ;                   ;
+; Total DSP Blocks                            ; 0                 ;
+;     -- [A] Total Fixed Point DSP Blocks     ; 0                 ;
+;     -- [B] Total Floating Point DSP Blocks  ; 0                 ;
+;                                             ;                   ;
++---------------------------------------------+-------------------+
+
+
++--------------------+
+; Synthesis Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Synthesis
+    Info: Version 19.1.0 Build 240 03/26/2019 SJ Pro Edition
+    Info: Processing started: Thu Nov 28 00:29:04 2019
+Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off inv_tb -c inv_tb
+Info: qis_default_flow_script.tcl version: #2
+Info: Initializing Synthesis...
+Info: Project = "inv_tb"
+Info: Revision = "inv_tb"
+Info: Analyzing source files
+Info: Elaborating from top-level entity "inv_tb"
+Info (13230): Verilog HDL or VHDL information at inv_tb.sv(12): Iniciando Testbench File: C:/Users/satc1/OneDrive/Documentos/git/Concepcao-Estruturada/Projeto ADDAC/INV/TestBench/inv_tb.sv Line: 12
+Info (13230): Verilog HDL or VHDL information at inv_tb.sv(13): | A | S | File: C:/Users/satc1/OneDrive/Documentos/git/Concepcao-Estruturada/Projeto ADDAC/INV/TestBench/inv_tb.sv Line: 13
+Info (13230): Verilog HDL or VHDL information at inv_tb.sv(14): --------- File: C:/Users/satc1/OneDrive/Documentos/git/Concepcao-Estruturada/Projeto ADDAC/INV/TestBench/inv_tb.sv Line: 14
+Warning (13468): Verilog HDL Expression warning at : truncated literal to match 3 bits
+Warning (13416): Verilog HDL warning at inv_tb.sv(41): ignoring unsupported system task "display" File: C:/Users/satc1/OneDrive/Documentos/git/Concepcao-Estruturada/Projeto ADDAC/INV/TestBench/inv_tb.sv Line: 41
+Warning (13416): Verilog HDL warning at inv_tb.sv(47): ignoring unsupported system task "display" File: C:/Users/satc1/OneDrive/Documentos/git/Concepcao-Estruturada/Projeto ADDAC/INV/TestBench/inv_tb.sv Line: 47
+Warning (13416): Verilog HDL warning at inv_tb.sv(48): ignoring unsupported system task "display" File: C:/Users/satc1/OneDrive/Documentos/git/Concepcao-Estruturada/Projeto ADDAC/INV/TestBench/inv_tb.sv Line: 48
+Warning (13416): Verilog HDL warning at inv_tb.sv(50): ignoring unsupported system task "stop" File: C:/Users/satc1/OneDrive/Documentos/git/Concepcao-Estruturada/Projeto ADDAC/INV/TestBench/inv_tb.sv Line: 50
+Info: Found 2 design entities
+Info: There are 2 partitions after elaboration.
+Info: Creating instance-specific data models and dissolving soft partitions
+Info (18299): Expanding entity and wildcard assignments.
+Info (18300): Expanded entity and wildcard assignments. Elapsed time: 00:00:00
+Info: found pre-synthesis snapshots for 1 partition(s)
+Info: Synthesizing partition "root_partition"
+Warning (19712): After current split the netlist has at least doubled its original size. Stop splitting so that it does not get out of control.
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (21057): Implemented 0 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 0 input pins
+    Info (21059): Implemented 0 output pins
+Info: Successfully synthesized partition
+Info: Saving post-synthesis snapshots for 1 partition(s)
+Info: Quartus Prime Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 5255 megabytes
+    Info: Processing ended: Thu Nov 28 00:29:11 2019
+    Info: Elapsed time: 00:00:07
+
+

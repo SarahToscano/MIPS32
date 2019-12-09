@@ -1,0 +1,3 @@
+module somasub (a,b,cin,cout,s);
+
+endmodule
