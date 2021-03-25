@@ -1,6 +1,5 @@
-﻿# Concepcao-Estruturada
-Disciplina Concepção Estruturada de Circuitos Integrados - UFPB
-
-Aluna: Sarah Andrade T. de Carvalho  ---  Professor: Antonio Carlos Cavalcanti
-
-Objetivo: Este projeto do ADDAC baseia-se na concepção topdown deste circuito como primeiro projeto da disciplina
+﻿# MIPS32
+ 
+ Projeto de desenvolvimento de um MIPS32 com arquitetura Multiciclo em SystemVerilog/Verilog.
+ 
+ [Veja o relatório do projeto](https://github.com/SarahToscano/MIPS32/blob/master/Relatorio_SarahAndradeToscano.pdf)
