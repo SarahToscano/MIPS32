@@ -1,0 +1,220 @@
+C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/registradorEnReset.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/registradorEnReset.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module registradorEnReset
+
+Top level modules:
+	registradorEnReset
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/banco_reg_32.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/banco_reg_32.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module banco_reg_32
+
+Top level modules:
+	banco_reg_32
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/testbench/mips_tb.sv {1 {vlog -work work -sv {C:\Users\satc1\OneDrive\Documentos\Concepcao\MIPS\testbench\mips_tb.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mips_tb
+
+Top level modules:
+	mips_tb
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux3.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux3.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux3
+
+Top level modules:
+	mux3
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/ula_32.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/ula_32.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ula_32
+
+Top level modules:
+	ula_32
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/regbank_32.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/regbank_32.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module regbank_32
+
+Top level modules:
+	regbank_32
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/flopenr.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/flopenr.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module flopenr
+
+Top level modules:
+	flopenr
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux32.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux32.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux32
+
+Top level modules:
+	mux32
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/datapath.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/datapath.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/pc32.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/pc32.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pc32
+
+Top level modules:
+	pc32
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux2_5.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux2_5.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux2_5
+
+Top level modules:
+	mux2_5
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/reg_32.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/reg_32.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module reg_32
+
+Top level modules:
+	reg_32
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mdr.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mdr.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mdr
+
+Top level modules:
+	mdr
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/reg32.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/reg32.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module reg32
+
+Top level modules:
+	reg32
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/LSHIFT2.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/LSHIFT2.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module LSHIFT2
+
+Top level modules:
+	LSHIFT2
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux2.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux2.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux2
+
+Top level modules:
+	mux2
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/FSM.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/FSM.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FSM
+
+Top level modules:
+	FSM
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/decoder.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/decoder.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module decoder
+
+Top level modules:
+	decoder
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux4.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux4.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux4
+
+Top level modules:
+	mux4
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/flopenr2.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/flopenr2.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module flopenr2
+
+Top level modules:
+	flopenr2
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/extensor.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/extensor.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module extensor
+
+Top level modules:
+	extensor
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux2_32.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux2_32.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux2_32
+
+Top level modules:
+	mux2_32
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/control_unit.sv {2 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/control_unit.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module control_unit
+** Warning: C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/control_unit.sv(370): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	control_unit
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mips.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mips.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mips
+
+Top level modules:
+	mips
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux4_32.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux4_32.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux4_32
+
+Top level modules:
+	mux4_32
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux8.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/mux8.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux8
+
+Top level modules:
+	mux8
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/regbank.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/regbank.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module regbank
+
+Top level modules:
+	regbank
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/ula.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/ula.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ula
+
+Top level modules:
+	ula
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/LSHIFT2_26.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/LSHIFT2_26.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module LSHIFT2_26
+
+Top level modules:
+	LSHIFT2_26
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/ir.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/ir.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ir
+
+Top level modules:
+	ir
+
+} {} {}} C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/pc.sv {1 {vlog -work work -sv C:/Users/satc1/OneDrive/Documentos/Concepcao/MIPS/pc.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}}
